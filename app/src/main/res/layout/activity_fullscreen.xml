@@ -8,17 +8,16 @@
     android:background="#000000"
     tools:context=".FullscreenActivity">
     <RelativeLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
-
+        android:layout_height="136px"
+        android:layout_width="136px">
         <View
+            android:layout_gravity="bottom|right"
             android:id="@+id/circle"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:translationX="14.1dp"
-            android:translationY="14.1dp"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:translationX="33px"
+            android:translationY="33px"
             android:background="@drawable/circle"
-            android:layout_gravity="center"
          />
 
     </RelativeLayout>

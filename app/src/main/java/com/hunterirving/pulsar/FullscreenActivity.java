@@ -14,7 +14,6 @@ import static android.os.Build.VERSION.SDK_INT;
 import static android.view.View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
 
 public class FullscreenActivity extends AppCompatActivity {
-
     @SuppressWarnings("deprecation")
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -39,10 +38,11 @@ public class FullscreenActivity extends AppCompatActivity {
         if (SDK_INT >= Build.VERSION_CODES.P) {
             DisplayCutout displayCutout = this.getWindow().getDecorView().getRootWindowInsets().getDisplayCutout();
             if (displayCutout != null) {
-                List<Rect> bounding = displayCutout.getBoundingRects();
-                for (int i=0; i<bounding.size(); i++) {
+                //List<Rect> bounding = displayCutout.getBoundingRects();
+                System.out.println(displayCutout);
+                /*for (int i=0; i<bounding.size(); i++) {
                     Log.e("BoundingRect - ", ""+bounding.get(i));
-                }
+                }*/
             }
         }
     }
